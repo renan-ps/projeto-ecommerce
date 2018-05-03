@@ -10,7 +10,7 @@
 				<input class="form-control" type="text" value="Buscar">
 			</div>
 			<div class="col-md-2 col-xs-12" style="margin-top: 4.5%; text-align: center;">
-				<p><a href="#">Login</a> ou <a href="#">Cadastre-se</a></p>
+				<p><a href="#">Login</a> ou <a href="cadastre-se.php">Cadastre-se</a></p>
 			</div>
 		</div>
 		
