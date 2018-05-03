@@ -2,7 +2,7 @@
 
 ?>
 	<div class="container">
-		<div class="row">
+		<div class="row" style="margin-top: 1%;" >
 			<div class="col-md-2 col-xs-12">
 				<img class="img-fluid" src="imagens/logo.jpg">
 			</div>
@@ -13,42 +13,108 @@
 				<p><a href="#">Login</a> ou <a href="#">Cadastre-se</a></p>
 			</div>
 		</div>
-		<div class="row">
+		
+		<!--  NAVBAR  -->
+		<div class="row" style="margin-top: 1%;">
 			<div class="col-12">
 				<nav class="navbar navbar-expand-lg navbar-light bg-light">
-					<a class="navbar-brand" href="#">Navbar</a>
+					<a class="navbar-brand md-0" href="index.php">Webster</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-	target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav mr-auto">
-							<li class="nav-item active">
-								<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Link</a>
-							</li>
 							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									Dropdown
+								<a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Telefonia
 								</a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<a class="dropdown-item" href="#">Action</a>
-									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Smartfones</a>
+									<a class="dropdown-item" href="#">Celulares</a>
+									<a class="dropdown-item" href="#">Smartwatchs</a>
+									<a class="dropdown-item" href="#">Acessórios</a>
 									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="#">Something else here</a>
+									<a class="dropdown-item" href="#">Telefones fixos</a>
 								</div>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link disabled" href="#">Disabled</a>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Informática
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="#">Notebooks</a>
+									<a class="dropdown-item" href="#">Computadores</a>
+									<a class="dropdown-item" href="#">All in One</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#">Multifuncionais</a>
+									<a class="dropdown-item" href="#">Monitores</a>
+									<a class="dropdown-item" href="#">HDs Externos</a>
+									<a class="dropdown-item" href="#">Pen Drives</a>
+									<a class="dropdown-item" href="#">Projetores</a>
+								</div>
+							</li>
+							
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									TVs e Acessórios
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="#">Smart TV</a>
+									<a class="dropdown-item" href="#">TV LED</a>
+									<a class="dropdown-item" href="#">Ultra HD/4K</a>
+									<a class="dropdown-item" href="#">DVDs e Blu-Rays</a>
+								</div>
+							</li>
+							
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Eletrodomésticos
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="#">Geladeiras e refrigeradores</a>
+									<a class="dropdown-item" href="#">Máquinas de lavar</a>
+									<a class="dropdown-item" href="#">Fogões</a>
+									<a class="dropdown-item" href="#">Coifas</a>
+									<a class="dropdown-item" href="#">Lava-Louças</a>
+								</div>
+							</li>
+							
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Eletroportáteis
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="#">Fritadeiras</a>
+									<a class="dropdown-item" href="#">Fornos Elétricos</a>
+									<a class="dropdown-item" href="#">Panelas Elétricas</a>
+									<a class="dropdown-item" href="#">Cafeteiras</a>
+									<a class="dropdown-item" href="#">Ferros de passar</a>
+									<a class="dropdown-item" href="#">Batedeiras</a>
+								</div>
+							</li>
+							
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Móveis e decoração
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="#">Escritório</a>
+									<a class="dropdown-item" href="#">Cozinha</a>
+									<a class="dropdown-item" href="#">Dormitório</a>
+									<a class="dropdown-item" href="#">Colchões</a>
+									<a class="dropdown-item" href="#">Sala de Jantar</a>
+									<a class="dropdown-item" href="#">Sala de Estar</a>
+									<a class="dropdown-item" href="#">Banheiro</a>
+									<a class="dropdown-item" href="#">Área de Serviço</a>
+									<a class="dropdown-item" href="#">Decoração</a>
+								</div>
 							</li>
 						</ul>
 					</div>
 				</nav>
 			</div>
 		</div>
+		
+		<!--  FIM NAVBAR  -->
 			
 	</div>
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
