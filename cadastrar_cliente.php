@@ -27,10 +27,9 @@
 				<div class="col-md-6">
 					
 					<?php
-						if($senha != $csenha){
-							echo "Senhas não combinam, por favor, tente novamente.";
-							echo "<input class='btn-warning' type='button' value='Voltar' onClick='history.go(-1)'> ";
-						}
+					
+					include "validar_cadastro.php";
+
 					?>
 					
 					
