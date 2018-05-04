@@ -1,13 +1,13 @@
 <?php
 
 ?>
-	<div class="container">
+	
 		<div class="row" style="margin-top: 1%;" >
 			<div class="col-md-2 col-xs-12">
 				<img class="img-fluid" src="imagens/logo.jpg">
 			</div>
 			<div class="col-md-8 col-xs-12" style="margin-top: 4%" >
-				<input class="form-control" type="text" value="Buscar">
+				<input class="form-control" type="text" placeholder="Buscar">
 			</div>
 			<div class="col-md-2 col-xs-12" style="margin-top: 4.5%; text-align: center;">
 				<p><a href="#">Login</a> ou <a href="cadastre-se.php">Cadastre-se</a></p>
@@ -117,4 +117,4 @@
 		
 		<!--  FIM NAVBAR  -->
 			
-	</div>
+	
