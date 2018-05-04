@@ -15,8 +15,9 @@
 		</div>
 		
 		<!--  NAVBAR  -->
-		<div class="row" style="margin-top: 1%;">
-			<div class="col-12">
+		<div class="row" style="margin-top: 1%; ">
+			<div class="col-1"></div>
+			<div class="col-10" >
 				<nav class="navbar navbar-expand-lg navbar-light bg-light">
 					<a class="navbar-brand md-0" href="index.php">Webster</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-	target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

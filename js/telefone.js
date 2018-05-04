@@ -1,6 +1,6 @@
-var masks = ['(00) 00000-0000', '(00) 0000-00009'];
-$('.phone').mask(masks[1], {onKeyPress: 
-   function(val, e, field, options) {
-       field.mask(val.length > 14 ? masks[0] : masks[1], options) ;
-   }
+$(function($){
+   $("#date").mask("99/99/9999");
+   $(".phone").mask("(99) 99999-9999");
+   $(".tin").mask("999.999.999-99");
+   $("#ssn").mask("999-99-9999");
 });
