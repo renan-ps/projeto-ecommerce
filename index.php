@@ -56,11 +56,51 @@
 				</a>
 			</div>
 			
+			
+			<div class="row" style="margin: auto;">
+			
+				<div class="col-4" style="margin-top: 2%">
+					<div class="card" style="width: 18rem;">
+						<img class="card-img-top" src="imagens/produtos/hd_externo_seagate.jpg" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">HD Externo Seagate 500GB</h5>
+							<p class="card-text">R$199,99</p>
+							<a href="#" class="btn btn-primary">Comprar</a>
+						</div>
+					</div>
+				
+				</div>
+				
+				<div class="col-4" style="margin-top: 2%">
+					<div class="card" style="width: 18rem;">
+						<img class="card-img-top" src="imagens/produtos/smart_tv_samsung_32.jpg" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Smart TV Samsung 32"</h5>
+							<p class="card-text">R$999,99</p>
+							<a href="#" class="btn btn-primary">Comprar</a>
+						</div>
+					</div>
+				</div>
+					
+				<div class="col-4" style="margin-top: 2%">
+					<div class="card" style="width: 18rem;">
+						<img class="card-img-top" src="imagens/produtos/radio_relogio_mondial.jpg" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Radio Relógio Mondial</h5>
+							<p class="card-text">R$99,99</p>
+							<a href="#" class="btn btn-primary">Comprar</a>
+						</div>
+					</div>
+				
+				</div>
+			</div>
+			
+			
 			<?php
 				include "rodape.php";
 			?>
 			
-		</div>
+		
 		<script src="js/jquery-3.2.1.min.js"></script>
 		<script src="js/popper.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
