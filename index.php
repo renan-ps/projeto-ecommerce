@@ -56,6 +56,10 @@
 				</a>
 			</div>
 			
+			<?php
+				include "rodape.php";
+			?>
+			
 		</div>
 		<script src="js/jquery-3.2.1.min.js"></script>
 		<script src="js/popper.min.js"></script>

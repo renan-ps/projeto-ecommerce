@@ -15,7 +15,7 @@
 		</div>
 		
 		<!--  NAVBAR  -->
-		<div class="row" style="margin-top: 1%; ">
+		<div class="row" style="margin-top: 1%;  margin-bottom: 1%">
 			
 			<div class="col-12" >
 				<nav class="navbar navbar-expand-lg navbar-light bg-light">
