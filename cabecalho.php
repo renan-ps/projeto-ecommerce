@@ -110,6 +110,17 @@
 									<a class="dropdown-item" href="#">Decoração</a>
 								</div>
 							</li>
+							
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Entretenimento
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="#">Filmes</a>
+									<a class="dropdown-item" href="#">Games</a>
+									<a class="dropdown-item" href="#">Livros</a>
+								</div>
+							</li>
 						</ul>
 					</div>
 				</nav>

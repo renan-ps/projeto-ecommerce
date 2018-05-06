@@ -30,47 +30,47 @@
 						<form id="cadastro_cliente" method="post" action="cadastrar_cliente.php">
 							<div class="form-group">
 								<label for="nome">Nome</label>
-								<input type="text" class="form-control" name="nome" id="nome" placeholder="Ex: João Silva" >
+								<input type="text" class="form-control" name="nome" id="nome" placeholder="Ex: João Silva"  required>
 							</div>
 							
 							<div class="form-group">
 								<label for="nome">E-mail</label>
-								<input type="email" class="form-control" name="email" id="email" placeholder="Ex: joao@email.com" >
+								<input type="email" class="form-control" name="email" id="email" placeholder="Ex: joao@email.com" required>
 							</div>
 							
 							<div class="form-group">
 								<label for="senha">Senha</label>
-								<input type="password" class="form-control" name="senha" id="senha" placeholder="Sua senha" >
+								<input type="password" class="form-control" name="senha" id="senha" placeholder="Sua senha"  required>
 							</div>
 							
 							<div class="form-group">
 								<label for="csenha">Confirme sua senha</label>
-								<input type="password" class="form-control" name="csenha" id="csenha" placeholder="Confirme sua senha" >
+								<input type="password" class="form-control" name="csenha" id="csenha" placeholder="Confirme sua senha" required>
 							</div>
 							
 							<div class="form-group">
 								<label for="cpf">CPF</label>
-								<input type="text" class="form-control cpf" id="cpf" placeholder="Ex: 111.111.111-11" >
+								<input type="text" class="form-control cpf" name="cpf" id="cpf" placeholder="Ex: 111.111.111-11" required >
 							</div>
 							
 							<div class="form-group">
 								<label for="celular">Celular</label>
-								<input type="text" class="form-control phone" id="celular" placeholder="Ex: (11) 11111-1111" >
+								<input type="text" class="form-control phone" name="celular" id="celular" placeholder="Ex: (11) 11111-1111" required >
 							</div>
 							
 							<div class="form-group">
 								<label for="endereco">Endereço</label>
-								<input type="text" class="form-control" id="endereco" placeholder="Ex: Rua A, nº 8" >
+								<input type="text" class="form-control" name="endereco" id="endereco" placeholder="Ex: Rua A, nº 8" required >
 							</div>
 							
 							<div class="form-group">
 								<label for="cidade">Cidade</label>
-								<input type="text" class="form-control" id="cidade" placeholder="Ex: Rio de Janeiro" >
+								<input type="text" class="form-control" name="cidade" id="cidade" placeholder="Ex: Rio de Janeiro" required >
 							</div>
 							
 							<div class="form-group">
 								<label for="estado">Estado</label>
-								<select name="estado" id="estado" class="form-control" >
+								<select name="estado" id="estado" class="form-control"  required>
 									<option value="" disabled selected>Selecione</option>
 									<option value="AC">AC</option>
 									<option value="AL">AL</option>
