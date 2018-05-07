@@ -32,9 +32,9 @@
 
 <div class="row" style="margin: 2%">
 	<div class="col-12">
-		<p>Todas as regras e promoções são válidas apenas para produtos vendidos e entregues pela Americanas.com. O preço válido será o da finalização da compra. Havendo divergência, prevalecerá o menor preço ofertado</p>
+		<p class="margemb1">Todas as regras e promoções são válidas apenas para produtos vendidos e entregues pela Americanas.com. O preço válido será o da finalização da compra. Havendo divergência, prevalecerá o menor preço ofertado.</p>
 		
-		<p>Webster Comercio de Produtos LTDA / CNPJ: 12.345.678/0001-00 / Inscrição Estadual: 123.456.789.100 / Endereço: Avenida das Américas, 3959 - Rio de Janeiro, RJ - 22631-003</p>
+		<p class="margemb1">Webster Comercio de Produtos LTDA / CNPJ: 12.345.678/0001-00 / Inscrição Estadual: 123.456.789.100 / Endereço: Avenida das Américas, 3959 - Rio de Janeiro, RJ - 22631-003</p>
 		
 	</div>
 

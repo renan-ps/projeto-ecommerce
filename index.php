@@ -27,21 +27,21 @@
 					<div class="carousel-item active">
 						<img class="d-block w-100" src="imagens/caroussel/iphone.jpg" />
 						<div class="carousel-caption d-none d-md-block">
-							<h3 class="titulocarrossel">Super promoção de iPhones!</h3>
+							<h3 style="color: #ffc107 !important; text-shadow: 1px 1px #000 !important;">Super promoção de iPhones!</h3>
 							
 						</div>
 					</div>
 					<div class="carousel-item">
 						<img class="d-block w-100" src="imagens/caroussel/notebook.jpg" />
 						<div class="carousel-caption d-none d-md-block">
-							<h3 class="titulocarrossel">Notebook com preços de fábrica!</h3>
+							<h3 style="color: #ffc107 !important; text-shadow: 1px 1px #000 !important;">Notebook com preços de fábrica!</h3>
 							
 						</div>
 					</div>
 					<div class="carousel-item">
 						<img class="d-block w-100" src="imagens/caroussel/smart%20tv.png" />
 						<div class="carousel-caption d-none d-md-block">
-							<h3 class="titulocarrossel">Smart TVs à partir de R$999,99!</h3>
+							<h3 style="color: #ffc107 !important; text-shadow: 1px 1px #000 !important;">Smart TVs à partir de R$999,99!</h3>
 							
 						</div>
 					</div>
@@ -68,7 +68,7 @@
 								<h4 class="card-title">Smartphone Samsung Galaxy J1 Mini</h4>
 								<h6 class="card-subtitle mb-2 text-muted">R$ 365,80</h6>
 								<p class="card-text">Dual Chip Android 5.1 Tela 4" 8GB 3G Wi-Fi Câmera 5MP - Dourado</p>
-								<a href="#" class="btn btn-primary">Comprar</a>
+								<a href="#" class="btn btn-warning">Comprar</a>
 							</div>
 						</div>
 						
@@ -78,7 +78,7 @@
 								<h4 class="card-title">Smart TV LED 32" Samsung</h4>
 								<h6 class="card-subtitle mb-2 text-muted">R$ 1099,90</h6>
 								<p class="card-text">HD com Conversor Digital 2 HDMI 1 USB Wi-Fi 120Hz</p>
-								<a href="#" class="btn btn-primary">Comprar</a>
+								<a href="#" class="btn btn-warning">Comprar</a>
 							</div>
 						</div>
 						
@@ -88,7 +88,7 @@
 								<h4 class="card-title">Panela de Pressão Elétrica Philips Walita</h4>
 								<h6 class="card-subtitle mb-2 text-muted">R$ 279,90</h6>
 								<p class="card-text">Linha Daily Collection RI3103/7 - 5 Litros com timer</p>
-								<a href="#" class="btn btn-primary">Comprar</a>
+								<a href="#" class="btn btn-warning">Comprar</a>
 							</div>
 						</div>
 					
