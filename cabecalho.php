@@ -1,4 +1,5 @@
 <?php
+	include "conexao.php";
 
 ?>
 	
@@ -10,7 +11,7 @@
 				<input class="form-control" type="text" placeholder="Buscar">
 			</div>
 			<div class="col-md-2 col-xs-12" style="margin-top: 4.5%; text-align: center;">
-				<p><a href="#">Login</a> ou <a href="cadastre-se.php">Cadastre-se</a></p>
+				<p><a href="login.php">Login</a> ou <a href="cadastre-se.php">Cadastre-se</a></p>
 			</div>
 		</div>
 		
