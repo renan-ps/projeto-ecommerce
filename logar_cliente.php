@@ -27,19 +27,28 @@
 				<div class="col-md-3 col-xs-0"></div>
 				<div class="col-md-6 col-xs-12">
 
-					<form method="post" action="logar_cliente.php">
-						<h3 style="margin-top: 3%; margin-bottom: 2%;">Efetue seu login</h3>
-						<div class="form-group">
-							<label for="email">Email do Usuário</label>
-							<input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" 	placeholder="">
-						</div>
-						<div class="form-group">
-							<label for="senha">Senha</label>
-							<input type="password" class="form-control" id="senha" name="senha" placeholder="">
-						</div>
-						<button type="submit" class="btn btn-warning">Enviar</button>
+					<?php
 
-					</form>
+					$email = $_POST['email'];
+					$senha = $_POST['senha'];
+
+					$verificar = "SELECT nomeCliente FROM clientes WHERE emailCliente = '$email' and senhaCliente = '$senha'";
+					$resultado = mysqli_query($conn, $verificar);
+		
+					if($dados=mysqli_fetch_assoc($resultado)){
+	
+						
+						header("location: index.php");
+	
+					} else{
+	
+						echo "<p>Login e/ou senha inválido(s).</p>";
+						echo "<button type='submit' class='btn btn-warning' onClick='history.go(-1)'>Voltar</button>";
+
+					}
+					?>
+
+					
 
 				</div>
 			</div>
