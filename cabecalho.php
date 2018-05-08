@@ -11,7 +11,23 @@
 				<input class="form-control" type="text" placeholder="Buscar">
 			</div>
 			<div class="col-md-2 col-xs-12" style="margin-top: 4.5%; text-align: center;">
-				<p><a href="login.php">Login</a> ou <a href="cadastre-se.php">Cadastre-se</a></p>
+				<?php
+				
+					if($_SESSION['nome'] != ''){
+						
+						echo "Olá, " . $_SESSION['nome'];
+						echo "<a href='logout.php'>Sair</a>"
+					}
+							else{
+						
+						echo "<p>Olá visitante!</p>";
+						echo "<p><a href='login.php'>Login</a> ou <a href='cadastre-se.php'>Cadastre-se</a></p>";
+					}
+				
+				
+				?>
+				
+				
 			</div>
 		</div>
 		

@@ -1,4 +1,5 @@
 <?php
+	session_start();
 	include "conexao.php";
 
 ?>
@@ -36,9 +37,9 @@
 					$resultado = mysqli_query($conn, $verificar);
 		
 					if($dados=mysqli_fetch_assoc($resultado)){
-	
-						
-						header("location: index.php");
+						$_SESSION['nome'] = $dados['nomeCliente'];
+						echo "<script>location.href='index.php';</script>";
+						//header("location: index.php");
 	
 					} else{
 	
