@@ -31,7 +31,7 @@
 					<?php
 
 					$email = $_POST['email'];
-					$senha = $_POST['senha'];
+					$senha = sha1($_POST['senha']);
 
 					$verificar = "SELECT nomeCliente FROM clientes WHERE emailCliente = '$email' and senhaCliente = '$senha'";
 					$resultado = mysqli_query($conn, $verificar);

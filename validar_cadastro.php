@@ -3,8 +3,8 @@
 	$nome = $_POST['nome'];
 	$email = $_POST['email'];
 	$cpf = $_POST['cpf'];
-	$senha = $_POST['senha'];
-	$csenha = $_POST['csenha'];
+	$senha = sha1($_POST['senha']);
+	$csenha = sha1($_POST['csenha']);
 	$celular = $_POST['celular'];
 	$endereco = $_POST['endereco'];
 	$cidade = $_POST['cidade'];

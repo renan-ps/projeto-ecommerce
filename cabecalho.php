@@ -9,12 +9,23 @@
 				<img class="img-fluid" src="imagens/logo.jpg">
 			</div>
 			<div class="col-md-7 col-xs-12" style="margin-top: 4%" >
-				<input class="form-control" type="text" placeholder="Buscar">
+				
+				<form id="buscar_produtos" method="post" action="busca.php">
+					<div class="form-group row">
+						<div class="col-md-11 col-xs-8">
+							<input class="form-control" name="busca" id="busca" type="text" placeholder="O que você deseja buscar?">
+						</div>
+						<div class="col-md-1 col-xs-0">
+							<button type="submit" class="btn btn-warning">Buscar</button>
+						</div>
+					</div>
+				</form>
+				
 			</div>
-			<div class="col-md-3 col-xs-12" style="margin-top: 4.5%; text-align: center;">
+			<div class="col-md-3 col-xs-12" style="margin-top: 2.4%; text-align: center;">
 				<?php
 				
-					if($_SESSION['nome'] != ''){
+					if(isset($_SESSION['nome'])){
 						
 						echo "<p>Olá, " . $_SESSION['nome'] . "</p>";
 						echo "<p><a href='logout.php'>Sair</a></p>";
