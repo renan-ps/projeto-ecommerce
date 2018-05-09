@@ -1,4 +1,5 @@
 <?php
+	session_start();
 	include "conexao.php";
 
 ?>
@@ -7,16 +8,16 @@
 			<div class="col-md-2 col-xs-12">
 				<img class="img-fluid" src="imagens/logo.jpg">
 			</div>
-			<div class="col-md-8 col-xs-12" style="margin-top: 4%" >
+			<div class="col-md-7 col-xs-12" style="margin-top: 4%" >
 				<input class="form-control" type="text" placeholder="Buscar">
 			</div>
-			<div class="col-md-2 col-xs-12" style="margin-top: 4.5%; text-align: center;">
+			<div class="col-md-3 col-xs-12" style="margin-top: 4.5%; text-align: center;">
 				<?php
 				
 					if($_SESSION['nome'] != ''){
 						
-						echo "Olá, " . $_SESSION['nome'];
-						echo "<a href='logout.php'>Sair</a>"
+						echo "<p>Olá, " . $_SESSION['nome'] . "</p>";
+						echo "<p><a href='logout.php'>Sair</a></p>";
 					}
 							else{
 						
