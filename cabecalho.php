@@ -15,8 +15,10 @@
 						<div class="col-md-11 col-xs-8">
 							<input class="form-control" name="busca" id="busca" type="text" placeholder="O que você deseja buscar?">
 						</div>
-						<div class="col-md-1 col-xs-0">
-							<button type="submit" class="btn btn-warning">Buscar</button>
+						<div class="col-md-1">
+							<button type="submit" class="btn btn-warning">
+								Buscar 
+							</button>
 						</div>
 					</div>
 				</form>
