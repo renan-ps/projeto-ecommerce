@@ -21,17 +21,56 @@
 				include "cabecalho.php";
 				
 				$categoria = $_GET['categoria'];
-					
-				$result_busca = "SELECT * FROM produtos WHERE idcategoria = $categoria";
-				$resultado_busca = mysqli_query($conn, $result_busca);
+				
+				$result_categoria = "SELECT * FROM produtos WHERE idCategoria = $categoria";
+				$resultado_categoria = mysqli_query($conn, $result_categoria);
 			
 			?>
+			
+			<div class="row" style="margin-top: 2%;">
+				
+						<div class="col-12" >
+							<div class="card-deck">
+					
+					
+								<?php
+								
+								
+								while($row_categoria = mysqli_fetch_assoc($resultado_categoria)){
+								
+								?>
+					
+								<div class="col-4" style="margin-bottom: 2%;">
+								<div class="card">
+									<img src="<?php echo $row_categoria['imagem'] ?>" class="card-img-top" />
+									<div class="card-body">
+										<h4 class="card-title"><?php echo $row_categoria['nomeProduto'] ?></h4>
+										<h6 class="card-subtitle mb-2 text-muted"><?php echo "R$ " . $row_categoria['preco'] ?></h6>
+										<p class="card-text"><?php echo $row_categoria['descricao'] ?></p>
+										
+										<form id="adicionar_carrinho" method="post" action="adicionar_carrinho.php">
+											<input type="hidden" name="imagem" value="<?php echo $row_categoria['imagem'] ?>">
+											<input type="hidden" name="idProduto" value="<?php echo $row_categoria['idProduto'] ?>">
+											<input type="hidden" name="nomeProduto" value="<?php echo $row_categoria['nomeProduto'] ?>">
+											<input type="hidden" name="preco" value="<?php echo $row_categoria['preco'] ?>">
+											<button type="submit" class="btn btn-warning">Comprar</button>
+										</form>
+									</div>
+								</div>
+								</div>
+								<?php
+								}
+								?>
+
+							</div>
+						</div>
+					</div>
 			
 			
 			
 			
 			<?php
-			}
+			
 				include "rodape.php";
 			?>
 			
