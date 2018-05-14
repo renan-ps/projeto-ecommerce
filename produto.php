@@ -38,6 +38,7 @@
 					<p>Gostaria de enfatizar que o entendimento das metas propostas apresenta tendências no sentido de aprovar a manutenção de todos os recursos funcionais envolvidos.</p>
 				</div>
 				<div class="col-3">
+					<p>R$<?php echo $alvos[0]['preco']; ?></p>
 					<form id="adicionar_carrinho" method="post" action="adicionar_carrinho.php">
 						<input type="hidden" name="imagem" value="<?php echo $alvos[0]['imagem'] ?>">
 						<input type="hidden" name="idProduto" value="<?php echo $alvos[0]['idProduto'] ?>">

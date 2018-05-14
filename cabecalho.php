@@ -89,7 +89,7 @@
 							</li>
 							
 							<li class="nav-item dropdown">
-								<a class="nav-link" href="categoria.php?categoria=tvs" id="3" role="button"  aria-haspopup="true" aria-expanded="false">
+								<a class="nav-link" href="categoria.php?categoria=3" id="navbarDropdown" role="button"  aria-haspopup="true" aria-expanded="false">
 									TVs e Acessórios
 								</a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
