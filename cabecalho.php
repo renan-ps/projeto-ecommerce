@@ -30,11 +30,13 @@
 					if(isset($_SESSION['nome'])){
 						
 						echo "<p>Olá, " . $_SESSION['nome'] . "</p>";
-						echo "<p><a href='logout.php'>Sair</a></p>";
+						echo "<p><a href='carrinho.php'>Seu Carrinho</a> ou <a href='logout.php'>Sair</a></p>";
+						//echo "<p><a href='logout.php'>Sair</a></p>";
 					}
 							else{
 						
 						echo "<p>Olá visitante!</p>";
+						echo "<p><a href='carrinho.php'>Seu Carrinho</a></p>";
 						echo "<p><a href='login.php'>Login</a> ou <a href='cadastre-se.php'>Cadastre-se</a></p>";
 					}
 				
@@ -57,7 +59,7 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav mr-auto">
 							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<a class="nav-link" href="categoria.php?categoria=1" id="navbarDropdown" role="button"  aria-haspopup="true" aria-expanded="false">
 									Telefonia
 								</a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -70,7 +72,7 @@
 								</div>
 							</li>
 							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<a class="nav-link" href="categoria.php?categoria=2" id="navbarDropdown" role="button"  aria-haspopup="true" aria-expanded="false">
 									Informática
 								</a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -87,7 +89,7 @@
 							</li>
 							
 							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<a class="nav-link" href="categoria.php?categoria=tvs" id="3" role="button"  aria-haspopup="true" aria-expanded="false">
 									TVs e Acessórios
 								</a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -99,7 +101,7 @@
 							</li>
 							
 							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<a class="nav-link" href="categoria.php?categoria=4" id="navbarDropdown" role="button"  aria-haspopup="true" aria-expanded="false">
 									Eletrodomésticos
 								</a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -112,7 +114,7 @@
 							</li>
 							
 							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<a class="nav-link" href="categoria.php?categoria=5" id="navbarDropdown" role="button"  aria-haspopup="true" aria-expanded="false">
 									Eletroportáteis
 								</a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -126,7 +128,7 @@
 							</li>
 							
 							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<a class="nav-link" href="categoria.php?categoria=6" id="navbarDropdown" role="button"  aria-haspopup="true" aria-expanded="false">
 									Móveis e decoração
 								</a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -143,7 +145,7 @@
 							</li>
 							
 							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<a class="nav-link" href="categoria.php?categoria=7" id="navbarDropdown" role="button"  aria-haspopup="true" aria-expanded="false">
 									Entretenimento
 								</a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">

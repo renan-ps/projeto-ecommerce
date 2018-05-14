@@ -78,8 +78,17 @@
 								<h4 class="card-title"><?php echo $alvos[0]['nomeProduto'] ?></h4>
 								<h6 class="card-subtitle mb-2 text-muted"><?php echo "R$ " . $alvos[0]['preco'] ?></h6>
 								<p class="card-text"><?php echo $alvos[0]['descricao'] ?></p>
-								<a href="#" class="btn btn-warning">Comprar</a>
 							</div>
+							<div class="card-footer" style="background-color: #fff; border-top: #fff;">
+								<form id="adicionar_carrinho" method="post" action="adicionar_carrinho.php">
+									<input type="hidden" name="imagem" value="<?php echo $alvos[0]['imagem'] ?>">
+									<input type="hidden" name="idProduto" value="<?php echo $alvos[0]['idProduto'] ?>">
+									<input type="hidden" name="nomeProduto" value="<?php echo $alvos[0]['nomeProduto'] ?>">
+									<input type="hidden" name="preco" value="<?php echo $alvos[0]['preco'] ?>">
+									<button type="submit" class="btn btn-warning">Comprar</button>
+								</form>
+							</div>
+							
 						</div>
 						
 						<div class="card">
@@ -88,7 +97,16 @@
 								<h4 class="card-title"><?php echo $alvos[1]['nomeProduto'] ?></h4>
 								<h6 class="card-subtitle mb-2 text-muted"><?php echo "R$ " . $alvos[1]['preco'] ?></h6>
 								<p class="card-text"><?php echo $alvos[1]['descricao'] ?></p>
-								<a href="#" class="btn btn-warning">Comprar</a>
+								
+							</div>
+							<div class="card-footer" style="background-color: #fff; border-top: #fff;">
+								<form id="adicionar_carrinho" method="post" action="adicionar_carrinho.php">
+									<input type="hidden" name="imagem" value="<?php echo $alvos[1]['imagem'] ?>">
+									<input type="hidden" name="idProduto" value="<?php echo $alvos[1]['idProduto'] ?>">
+									<input type="hidden" name="nomeProduto" value="<?php echo $alvos[1]['nomeProduto'] ?>">
+									<input type="hidden" name="preco" value="<?php echo $alvos[1]['preco'] ?>">
+									<button type="submit" class="btn btn-warning">Comprar</button>
+								</form>
 							</div>
 						</div>
 						
@@ -98,7 +116,16 @@
 								<h4 class="card-title"><?php echo $alvos[2]['nomeProduto'] ?></h4>
 								<h6 class="card-subtitle mb-2 text-muted"><?php echo "R$ " . $alvos[2]['preco'] ?></h6>
 								<p class="card-text"><?php echo $alvos[2]['descricao'] ?></p>
-								<a href="#" class="btn btn-warning">Comprar</a>
+							</div>
+							
+							<div class="card-footer" style="background-color: #fff; border-top: #fff;">
+								<form id="adicionar_carrinho" method="post" action="adicionar_carrinho.php">
+									<input type="hidden" name="imagem" value="<?php echo $alvos[2]['imagem'] ?>">
+									<input type="hidden" name="idProduto" value="<?php echo $alvos[2]['idProduto'] ?>">
+									<input type="hidden" name="nomeProduto" value="<?php echo $alvos[2]['nomeProduto'] ?>">
+									<input type="hidden" name="preco" value="<?php echo $alvos[2]['preco'] ?>">
+									<button type="submit" class="btn btn-warning">Comprar</button>
+								</form>
 							</div>
 						</div>
 						
