@@ -5,7 +5,7 @@ include "conexao.php";
 $email = $_POST['email'];
 $senha = $_POST['senha'];
 
-$verificar = "SELECT nomeCliente FROM clientes WHERE emailCliente = '$email' or senhaCliente = '$senha'";
+$verificar = "SELECT * FROM clientes WHERE emailCliente = '$email' or senhaCliente = '$senha'";
 $resultado = mysqli_query($conn, $verificar);
 		
 if($dados=mysqli_fetch_assoc($resultado)){

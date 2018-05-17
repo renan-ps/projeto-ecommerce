@@ -49,7 +49,7 @@
 									<img src="<?php echo $row_busca['imagem'] ?>" class="card-img-top" />
 									<div class="card-body">
 										<h4 class="card-title"><a href="produto.php?produto=<?php echo $row_busca['idProduto'] ?>"><?php echo $row_busca['nomeProduto'] ?></a></h4>
-										<h6 class="card-subtitle mb-2 text-muted"><?php echo "R$ " . $row_busca['preco'] ?></h6>
+										<h6 class="card-subtitle mb-2 text-muted"><?php echo "R$ " . number_format($row_busca['preco'], 2, ',', '.'); ?></h6>
 										<p class="card-text"><?php echo $row_busca['descricao'] ?></p>
 										
 										<form id="adicionar_carrinho" method="post" action="adicionar_carrinho.php">

@@ -29,9 +29,9 @@
 				
 					if(isset($_SESSION['nome'])){
 						
-						echo "<p>Olá, " . $_SESSION['nome'] . "</p>";
-						echo "<p><a href='carrinho.php'>Seu Carrinho</a> ou <a href='logout.php'>Sair</a></p>";
-						//echo "<p><a href='logout.php'>Sair</a></p>";
+						echo "<p>Olá, <a href='cliente.php'>" . $_SESSION['nome'] . "</a></p>";
+						echo "<p><a class='espm' href='carrinho.php'>Seu Carrinho</a> ou <a href='logout.php'>Sair</a></p>";
+						
 					}
 							else{
 						

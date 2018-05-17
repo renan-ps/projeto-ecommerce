@@ -8,7 +8,8 @@
 	$celular = $_POST['celular'];
 	$endereco = $_POST['endereco'];
 	$cidade = $_POST['cidade'];
-	$estado =$_POST['estado'];
+	$estado = $_POST['estado'];
+	$tipo = $_POST['tipo'];
 
 	
 	if($senha != $csenha){
@@ -31,7 +32,7 @@
 		} else{
 			
 			//Montar as cláusulas(instruções) MySQL/SQL para envio dos dados.
-			$inserir = "INSERT INTO clientes(nomeCliente, emailCliente, senhaCliente, cpf, telefone, endereco, cidade, estado) values('$nome', '$email', '$senha', '$cpf', '$celular', '$endereco', '$cidade', '$estado')";
+			$inserir = "INSERT INTO clientes(nomeCliente, emailCliente, senhaCliente, cpf, telefone, endereco, cidade, estado, tipo) values('$nome', '$email', '$senha', '$cpf', '$celular', '$endereco', '$cidade', '$estado', '$tipo')";
 			
 			//Enviar os dados para a tabela
 			$enviar = mysqli_query($conn, $inserir);

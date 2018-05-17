@@ -2,6 +2,7 @@
 
 	session_start();
 	
+	
 
 	if (empty($_SESSION['carrinho'])) {
 		$_SESSION['carrinho'] = [];
@@ -14,6 +15,8 @@
 		//print_r($_SESSION['carrinho']);
 		
 	}
+
+	$_SESSION['somaCarrinho'] = array_sum($_SESSION['carrinho']);
 		
 	echo "<script>location.href='carrinho.php';</script>";
 		

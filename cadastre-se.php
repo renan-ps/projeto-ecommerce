@@ -103,6 +103,10 @@
 							</div>
 							
 							<div class="form-group">
+								<input type="hidden" name="tipo" value="1">
+							</div>
+							
+							<div class="form-group">
 								<button type="submit" class="btn btn-warning">Cadastre-se</button>
 							</div>
 							

@@ -45,7 +45,7 @@
 									<img src="<?php echo $row_categoria['imagem'] ?>" class="card-img-top" />
 									<div class="card-body">
 										<h4 class="card-title"><a href="produto.php?produto=<?php echo $row_categoria['idProduto'] ?>"><?php echo $row_categoria['nomeProduto'] ?></a></h4>
-										<h6 class="card-subtitle mb-2 text-muted"><?php echo "R$ " . $row_categoria['preco'] ?></h6>
+										<h6 class="card-subtitle mb-2 text-muted"><?php echo "R$ " . number_format($row_categoria['preco'], 2, ',', '.');  ?></h6>
 										<p class="card-text"><?php echo $row_categoria['descricao'] ?></p>
 										
 										<form id="adicionar_carrinho" method="post" action="adicionar_carrinho.php">

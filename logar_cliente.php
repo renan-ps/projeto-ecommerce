@@ -33,11 +33,13 @@
 					$email = $_POST['email'];
 					$senha = sha1($_POST['senha']);
 
-					$verificar = "SELECT nomeCliente FROM clientes WHERE emailCliente = '$email' and senhaCliente = '$senha'";
+					$verificar = "SELECT * FROM clientes WHERE emailCliente = '$email' and senhaCliente = '$senha'";
 					$resultado = mysqli_query($conn, $verificar);
 		
 					if($dados=mysqli_fetch_assoc($resultado)){
 						$_SESSION['nome'] = $dados['nomeCliente'];
+						$_SESSION['tipo'] = $dados['tipo'];	
+						$_SESSION['idCliente'] = $dados['cliente'];
 						echo "<script>location.href='index.php';</script>";
 						//header("location: index.php");
 	

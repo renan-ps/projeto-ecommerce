@@ -9,7 +9,7 @@
 		<title>Webster</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/estilo.css">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+		
 	</head>
 
 	<body>
@@ -76,7 +76,7 @@
 							<img src="<?php echo $alvos[0]['imagem'] ?>" class="card-img-top" />
 							<div class="card-body">
 								<h4 class="card-title"><a href="produto.php?produto=<?php echo $alvos[0]['idProduto'] ?>"><?php echo $alvos[0]['nomeProduto'] ?></a></h4>
-								<h6 class="card-subtitle mb-2 text-muted"><?php echo "R$ " . $alvos[0]['preco'] ?></h6>
+								<h6 class="card-subtitle mb-2 text-muted"><?php echo "R$ " . number_format($alvos[0]['preco'], 2, ',', '.');  ?></h6>
 								<p class="card-text"><?php echo $alvos[0]['descricao'] ?></p>
 							</div>
 							<div class="card-footer" style="background-color: #fff; border-top: #fff;">
@@ -95,7 +95,7 @@
 							<img src="<?php echo $alvos[1]['imagem'] ?>" class="card-img-top" />
 							<div class="card-body">
 								<h4 class="card-title"><a href="produto.php?produto=<?php echo $alvos[1]['idProduto'] ?>"><?php echo $alvos[1]['nomeProduto'] ?></a></h4>
-								<h6 class="card-subtitle mb-2 text-muted"><?php echo "R$ " . $alvos[1]['preco'] ?></h6>
+								<h6 class="card-subtitle mb-2 text-muted"><?php echo "R$ " . number_format($alvos[1]['preco'], 2, ',', '.');  ?></h6>
 								<p class="card-text"><?php echo $alvos[1]['descricao'] ?></p>
 								
 							</div>
@@ -114,7 +114,7 @@
 							<img src="<?php echo $alvos[2]['imagem'] ?>" class="card-img-top" />
 							<div class="card-body">
 								<h4 class="card-title"><a href="produto.php?produto=<?php echo $alvos[2]['idProduto'] ?>"><?php echo $alvos[2]['nomeProduto'] ?></a></h4>
-								<h6 class="card-subtitle mb-2 text-muted"><?php echo "R$ " . $alvos[2]['preco'] ?></h6>
+								<h6 class="card-subtitle mb-2 text-muted"><?php echo "R$ " . number_format($alvos[0]['preco'], 2, ',', '.');  ?></h6>
 								<p class="card-text"><?php echo $alvos[2]['descricao'] ?></p>
 							</div>
 							

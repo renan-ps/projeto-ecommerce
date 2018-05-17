@@ -34,11 +34,12 @@
 
 				</div>
 				<div class="col-5">
-					<h2><?php echo $alvos[0]['nomeProduto'] ?></h2>
-					<p>Gostaria de enfatizar que o entendimento das metas propostas apresenta tendências no sentido de aprovar a manutenção de todos os recursos funcionais envolvidos.</p>
+					<h2><?php echo $alvos[0]['nomeProduto']; ?></h2>
+					<p><?php echo $alvos[0]['descricao']; ?></p>
 				</div>
 				<div class="col-3">
-					<p>R$<?php echo $alvos[0]['preco']; ?></p>
+					<h5>R$<?php echo number_format($alvos[0]['preco'], 2, ',', '.'); ?></h5>
+					<p>Em até 10x de R$<?php echo number_format(($alvos[0]['preco'])/10, 2, ',', '.') ?></p>
 					<form id="adicionar_carrinho" method="post" action="adicionar_carrinho.php">
 						<input type="hidden" name="imagem" value="<?php echo $alvos[0]['imagem'] ?>">
 						<input type="hidden" name="idProduto" value="<?php echo $alvos[0]['idProduto'] ?>">
