@@ -1,3 +1,5 @@
+<!--DESCONSIDERAR-->
+
 <?php
 	
 include "conexao.php";

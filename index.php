@@ -73,7 +73,7 @@
 				<div class="col-12" >
 					<div class="card-deck">
 						<div class="card">
-							<img src="<?php echo $alvos[0]['imagem'] ?>" class="card-img-top" />
+							<img src="<?php echo $alvos[0]['imagem'] ?>" class="card-img-top" style="margin-top: 1%;" />
 							<div class="card-body">
 								<h4 class="card-title"><a href="produto.php?produto=<?php echo $alvos[0]['idProduto'] ?>"><?php echo $alvos[0]['nomeProduto'] ?></a></h4>
 								<h6 class="card-subtitle mb-2 text-muted"><?php echo "R$ " . number_format($alvos[0]['preco'], 2, ',', '.');  ?></h6>
@@ -92,7 +92,7 @@
 						</div>
 						
 						<div class="card">
-							<img src="<?php echo $alvos[1]['imagem'] ?>" class="card-img-top" />
+							<img src="<?php echo $alvos[1]['imagem'] ?>" class="card-img-top" style="margin-top: 1%;" />
 							<div class="card-body">
 								<h4 class="card-title"><a href="produto.php?produto=<?php echo $alvos[1]['idProduto'] ?>"><?php echo $alvos[1]['nomeProduto'] ?></a></h4>
 								<h6 class="card-subtitle mb-2 text-muted"><?php echo "R$ " . number_format($alvos[1]['preco'], 2, ',', '.');  ?></h6>
@@ -111,7 +111,7 @@
 						</div>
 						
 						<div class="card">
-							<img src="<?php echo $alvos[2]['imagem'] ?>" class="card-img-top" />
+							<img src="<?php echo $alvos[2]['imagem'] ?>" class="card-img-top" style="margin-top: 1%;" />
 							<div class="card-body">
 								<h4 class="card-title"><a href="produto.php?produto=<?php echo $alvos[2]['idProduto'] ?>"><?php echo $alvos[2]['nomeProduto'] ?></a></h4>
 								<h6 class="card-subtitle mb-2 text-muted"><?php echo "R$ " . number_format($alvos[0]['preco'], 2, ',', '.');  ?></h6>

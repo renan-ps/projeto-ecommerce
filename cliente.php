@@ -25,12 +25,16 @@
 			?>
 			
 			<div class="row">
-				<div class="col-12">
+				<div class="col-9">
 					<p>Olá, <?php echo $_SESSION['nome']; ?>! Seja bem vindo à sua página de usuário.</p>
 					<p>Tipo da conta: Vendedor.</p>
+				</div>
+				<div class="col-3">
 					<a class="btn btn-warning btn-block" href="cadastrar_vendedor.php" role="button">Cadastrar vendedor</a>
 					<a class="btn btn-warning btn-block" href="consultar_vendas.php" role="button">Consultar vendas</a>
+					<a class="btn btn-warning btn-block" href="cadastrar_produto.php" role="button">Cadastrar Produto</a>
 				</div>
+				
 			</div>	
 			
 			<?php

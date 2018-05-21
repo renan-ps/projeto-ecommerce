@@ -39,8 +39,8 @@
 					if($dados=mysqli_fetch_assoc($resultado)){
 						$_SESSION['nome'] = $dados['nomeCliente'];
 						$_SESSION['tipo'] = $dados['tipo'];	
-						$_SESSION['idCliente'] = $dados['cliente'];
-						echo "<script>location.href='index.php';</script>";
+						$_SESSION['idCliente'] = $dados['idCliente'];
+						echo "<script>location.href='cliente.php';</script>";
 						//header("location: index.php");
 	
 					} else{
