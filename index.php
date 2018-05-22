@@ -114,7 +114,7 @@
 							<img src="<?php echo $alvos[2]['imagem'] ?>" class="card-img-top" style="margin-top: 1%;" />
 							<div class="card-body">
 								<h4 class="card-title"><a href="produto.php?produto=<?php echo $alvos[2]['idProduto'] ?>"><?php echo $alvos[2]['nomeProduto'] ?></a></h4>
-								<h6 class="card-subtitle mb-2 text-muted"><?php echo "R$ " . number_format($alvos[0]['preco'], 2, ',', '.');  ?></h6>
+								<h6 class="card-subtitle mb-2 text-muted"><?php echo "R$ " . number_format($alvos[2]['preco'], 2, ',', '.');  ?></h6>
 								<p class="card-text"><?php echo $alvos[2]['descricao'] ?></p>
 							</div>
 							

@@ -59,10 +59,12 @@
 				<?php
 				$soma = $soma + $value['preco'];
 				endforeach; 
-				?>			
-				<div class="row" style="border-top: 1px solid #E7E4E8; margin-top: 2%; margin-left: 7%; margin-right: 7%;">
+				?>	
+				<div class="row" style="border-top: 1px solid #E7E4E8; margin-top: 2%;"></div>
+				<div class="row" style="margin-top: 1%; margin-left: 7%; margin-right: 7%;">
 					<div class="col-5">Total:</div>
-					<div class="col-2" style="margin-left: -1.7%;">R$ <?php echo number_format($soma, 2, ',', '.'); }?></div>
+					<div class="col-2" style="margin-left: -1.7%;">R$ <?php echo number_format($soma, 2, ',', '.'); ?></div>
+					<div class="col-1"><a class="btn btn-sm btn-warning" href="limpar_carrinho.php">Limpar carrinho</a></div>
 				</div>
 			
 			<div class="row" style="margin-top: 3%;">
@@ -77,7 +79,7 @@
 										<option value="" disabled selected>Selecione</option>
 										<option value="1">À vista: R$<?php echo number_format($soma, 2, ',', '.'); ?></option>
 										<option value="2">10x de R$<?php echo number_format(($soma)/10, 2, ',', '.'); ?></option>
-										<option value="3">12x de R$<?php echo number_format((($soma + ($soma * 0.1))/12), 2, ',', '.'); ?></option>
+										<option value="3">12x de R$<?php echo number_format((($soma * 1.1)/12), 2, ',', '.'); ?></option>
 									</select>
 								</div>
 								
@@ -86,7 +88,7 @@
 									
 									<input type="hidden" name="idCliente" value="<?php echo $idCliente ?>">
 									<input type="hidden" name="dataCompra" value="<?php $today = getdate(); print_r($today); ?>">
-									<input type="hidden" name="statusPedido" value="1">
+									<input type="hidden" name="statusPedido" value="Em Processamento.">
 									<input type="hidden" name="valor" value="<?php echo $soma; ?>">
 									
 								</div>
@@ -98,7 +100,7 @@
 			</div>
 			
 			<?php
-			
+			}
 				include "rodape.php";
 			?>
 			

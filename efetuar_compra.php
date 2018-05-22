@@ -17,19 +17,49 @@
 			
 			<?php
 				include "cabecalho.php";
-			$arr = [];
+			$arrId = [];
+			$arrProd = [];
+			$arrPreco = [];
 			
 			$tipo = $_POST['tipo'];
-			$idCliente = $_POST['idCliente'];
+			$idCliente = $_SESSION['idCliente'];
 			$statusPedido = $_POST['statusPedido'];
 			$valor = $_POST['valor'];
+			
+			
+			if($tipo == 3){
+				$valor = $valor * 1.1;
+			}
 			
 			$_SESSION['carrinho'];
 			
 			foreach($_SESSION['carrinho'] as $produto){
-				array_push($arr, $produto['idProduto']);
+				array_push($arrId, $produto['idProduto']);
+				array_push($arrProd, $produto['nomeProduto']);
+				array_push($arrPreco, $produto['preco']);
 			}
-			print_r($arr);	
+			
+			$arrId = implode(",", $arrId);
+			
+			
+			$inserir = "INSERT INTO pedidos VALUES('', '$idCliente', '$arrId', '$valor', CURRENT_TIMESTAMP, '$tipo', '$statusPedido')";
+			
+			//Enviar os dados para a tabela
+			$enviar = mysqli_query($conn, $inserir);
+			
+			if($enviar){
+				echo "Compra cadastrada com sucesso!";
+				unset($_SESSION['carrinho']);
+			} else{
+				echo "Compra não cadastrada.";
+				mysqli_close($conn); //encerra a conexão
+			}
+			
+			
+			//print $produtos_comprados;
+			
+			//echo $data;	
+			//print_r($arrProd);	
 
 				include "rodape.php";
 			?>
