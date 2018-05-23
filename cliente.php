@@ -25,13 +25,14 @@
 			?>
 			
 			<div class="row">
+				<div class="col-1"></div>
 				<div class="col-3">
 					<a class="btn btn-warning btn-block" href="cadastrar_vendedor.php" role="button">Cadastrar vendedor</a>
 					<a class="btn btn-warning btn-block" href="consultar_vendas.php" role="button">Consultar vendas</a>
 					<a class="btn btn-warning btn-block" href="cadastrar_produto.php" role="button">Cadastrar Produto</a>
 					<a class="btn btn-warning btn-block" href="remover_produto.php" role="button">Remover Produto</a>
 				</div>
-				<div class="col-9">
+				<div class="col-7">
 					<p>Olá, <?php echo $_SESSION['nome']; ?>! Seja bem vindo à sua página de usuário.</p>
 					<p>Tipo da conta: Vendedor.</p>
 				</div>
@@ -43,11 +44,12 @@
 				}else{
 			?>
 				<div class="row">
-					<div class="col-12">
+					<div class="col-1"></div>
+					<div class="col-10">
 						<p>Olá, <?php echo $_SESSION['nome']; ?>! Seja bem vindo à sua página de usuário.</p>
-					</div>
-					<div class="row">
-						<div class="col-12">
+					
+						
+						
 							<table class="table">
 								<thead>
 									<tr>
@@ -79,8 +81,9 @@
 								</tbody>
 							</table>
 						</div>
-					</div>
-				</div>
+						</div>
+					
+				
 			
 			
 			<?php
